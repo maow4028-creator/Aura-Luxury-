@@ -1,0 +1,6 @@
+{
+  "name": "Aura Luxury Fitness Club",
+  "description": "Premium luxury gym website featuring membership booking, automated subscription lifecycle management, and admin controls in an elegant white and sky-blue design.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

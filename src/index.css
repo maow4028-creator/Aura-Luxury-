@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-primary: #55B9E8;
+    --color-navy: #123B5D;
+    --color-ice: #EAF6FC;
+    --color-silver: #DCE5EB;
+    --color-light-grey: #F5F7F9;
+    --color-text-main: #183247;
+    --color-text-muted: #718596;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #183247;
+    background-color: #FFFFFF;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Outfit', sans-serif;
+  }
+}
+
+/* Custom luxury scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F5F7F9;
+}
+::-webkit-scrollbar-thumb {
+  background: #C4DCE9;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #55B9E8;
+}
+
+/* Print styles for membership receipt */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #printable-receipt, #printable-receipt * {
+    visibility: visible;
+  }
+  #printable-receipt {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    background: white;
+  }
+}
