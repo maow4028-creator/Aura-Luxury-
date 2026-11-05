@@ -5,6 +5,7 @@ import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
   return {
+    base: "/Aura-Luxury/",
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
